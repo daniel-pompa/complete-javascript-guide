@@ -1,0 +1,163 @@
+/* General styles */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #475569;
+  background-color: #f8fafc;
+  display: flex;
+  font-family: 'Roboto', Inter, system-ui, Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  min-width: 320px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: calc(2.2rem + 0.5vw);
+}
+
+h2 {
+  font-size: calc(1.8rem + 0.5vw);
+}
+
+p,
+a {
+  font-size: calc(1rem + 0.5vw);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Styles for `index.html` file */
+.container {
+  margin: 0 auto;
+  max-width: 360px;
+  width: 100%;
+}
+
+.container img.logo {
+  border-radius: 0.5rem;
+  display: block;
+  height: 300px;
+  margin: 0 auto;
+  object-fit: cover;
+  transition: filter 300ms;
+  width: 300px;
+  will-change: filter;
+}
+
+.container img.logo:hover {
+  filter: drop-shadow(0 0 2rem #f7df1eaa);
+}
+
+.social-media-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-media-container img.social-media {
+  height: auto;
+  width: 4rem;
+}
+
+/* Styles for `dom.html` file */
+.dom {
+  width: 500px;
+  padding: 0 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .dom {
+    width: 100%;
+    min-width: 320px;
+  }
+}
+
+.dom nav {
+  background-color: #334155;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.dom nav a {
+  color: #fff;
+  display: block;
+  padding: 1.5rem 2rem;
+  width: 100%;
+}
+
+.dom nav a:hover {
+  background-color: #1e293b;
+}
+
+.dom form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.dom form input {
+  font-size: calc(1rem + 0.5vw);
+  outline: none;
+  border-radius: 0.3rem;
+  border: 1px solid transparent;
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.dom form input {
+  background-color: #e8f0fe;
+}
+
+.dom form input[type='submit'] {
+  background-color: #334155;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dom form input[type='submit']:hover {
+  background-color: #0f172a;
+  transition: background-color 0.5s;
+}
+
+.dom form input::placeholder {
+  font-style: italic;
+}
+
+.error {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
