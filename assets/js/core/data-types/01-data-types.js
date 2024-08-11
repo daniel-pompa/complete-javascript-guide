@@ -7,7 +7,7 @@
 // Symbol: a data type whose instances are unique and immutable
 // Null: a special value that represents the absence of a value
 
-console.log('%cTipos de datos primitivos', 'color: #1e3a8a; font-weight: bold;');
+console.log('%cPrimitive data types', 'color: #1e3a8a; font-weight: bold;');
 
 // Undefined
 let undefinedData;

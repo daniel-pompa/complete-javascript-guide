@@ -7,7 +7,7 @@
 // Map: a collection of key-value pairs that can be accessed by their keys
 // WeakMap: a collection of key-value pairs with object keys, held weakly
 
-console.log('%cTipos de datos no primitivos', 'color: #1e3a8a; font-weight: bold;');
+console.log('%cNon-primitive data types', 'color: #1e3a8a; font-weight: bold;');
 
 // Object
 const mySon = {
