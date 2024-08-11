@@ -7,10 +7,10 @@
 export const validateEmail = value => {
   const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   if (!value || value.trim() === '') {
-    return 'No disponible';
+    return 'Not available';
   }
   if (!EMAIL_REGEX.test(value)) {
-    throw new Error('El e-mail no tiene un formato válido.');
+    throw new Error('The email does not have a valid format.');
   }
   return value.trim();
 };
