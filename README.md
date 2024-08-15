@@ -60,6 +60,7 @@ The project follows a structured directory layout:
 │       │   ├───📁 arrays/
 │       │   ├───📁 async/
 │       │   ├───📁 classes/
+│       │   │   ├───📁 models/
 │       │   ├───📁 control-flow-structures/
 │       │   │   ├───📁 conditional-statements/
 │       │   │   └───📁 loops/
@@ -110,20 +111,22 @@ Examples:
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Daniel Pompa Pareja" />
-    <meta name="description" content="JavaScript Tutorial" />
-    <title>JavaScript Tutorial</title>
+    <meta name="description" content="Complete JavaScript Guide" />
+    <title>Complete JavaScript Guide</title>
     <link rel="icon" href="./assets/images/javascript.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <main>
       <header>
-        <h1>JavaScript Tutorial</h1>
+        <h1>Complete JavaScript Guide</h1>
       </header>
       <section>
-        <h2>Introducción</h2>
+        <!-- The title for each section is not updated dynamically, it must be updated manually. -->
+        <h2>Introduction</h2>
         <div class="container">
           <img src="./assets/images/javascript.svg" alt="JavaScript Logo" id="logo" />
+          <p>Contact me via the following channels</p>
           <div class="social-media-container">
             <a
               href="https://github.com/daniel-pompa"
@@ -167,8 +170,8 @@ Examples:
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Daniel Pompa Pareja" />
-    <meta name="description" content="JavaScript Tutorial" />
-    <title>JavaScript Tutorial</title>
+    <meta name="description" content="Complete JavaScript Guide" />
+    <title>Complete JavaScript Guide</title>
     <link rel="icon" type="image/svg+xml" href="./assets/images/javascript.svg" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -179,7 +182,8 @@ Examples:
       </header>
       <!-- Container for the DOM manipulation -->
       <section class="dom">
-        <h2 class="title">Selectores</h2>
+        <!-- The title for each section is not updated dynamically, it must be updated manually. -->
+        <h2 class="title">Selectors</h2>
         <!-- Navigation bar -->
         <nav class="nav">
           <a class="link" href="#">Link</a>
@@ -194,14 +198,14 @@ Examples:
             name="email"
             id="email"
             autocomplete="email"
-            placeholder="Correo electrónico"
+            placeholder="Email address"
           />
           <input
             type="password"
             name="password"
             id="password"
             autocomplete="current-password"
-            placeholder="Contraseña"
+            placeholder="Password"
           />
           <input type="submit" value="Enviar" />
         </form>
